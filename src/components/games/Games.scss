@@ -1,0 +1,30 @@
+@import "../variables.scss";
+.game {
+  display: flex;
+  height: 100%;
+  &__aside {
+    background: #3b3f36;
+    width: 20vw;
+    
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__main {
+    width: 80vw;
+    background: #bababa;
+  }
+  &__button {
+    width: 100%;
+    padding-top: toRem(10);
+    padding-bottom: toRem(10);
+
+    transition: all 0.5s;
+    border: 1px solid rgb(99, 92, 92);
+    &:hover {
+      color: #000;
+      border: 1px solid white;
+    }
+  }
+}

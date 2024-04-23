@@ -1,0 +1,61 @@
+@import "../../components/variables.scss";
+.account {
+  background: rgb(255, 255, 255);
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(20);
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    background: #6d6969;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__log {
+    padding: toRem(5) toRem(15);
+    position: relative;
+    z-index: 3;
+  }
+
+  &__sig {
+    padding: toRem(5) toRem(15);
+    position: relative;
+    z-index: 3;
+  }
+  &__sign-in {
+    color: white;
+    display: flex;
+    background: #6d6969;
+    margin: 0 auto;
+    margin-top: toRem(30);
+    padding: toRem(6) toRem(20);
+    border-radius: 10px;
+  }
+}
+.active-btn {
+position: absolute;
+width: 100%;
+z-index: 0;
+  &::before {
+    content: "";
+    width: 50%;
+    height: 35px;
+    transition: all 1s;
+    right: 15px;
+    position: absolute;
+    background: #000;
+    border-radius: 10px;
+  }
+ &.active{
+  &::before{
+    right: 65%;
+    width: 35%;
+  }
+ }
+}

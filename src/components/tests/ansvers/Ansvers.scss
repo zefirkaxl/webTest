@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+.ansvers {
+  background: #a49999;
+  color: black;
+padding: toRem(30) toRem(70) toRem(30) toRem(50);
+width: toRem(600);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: toRem(30);
+&__list{
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10);
+  li{
+    list-style-type: decimal;
+
+  }
+}
+&__question {
+  text-align: center;
+  @include adaptiveValue("font-size", 26, 18);
+}
+&__btn{
+    background: #677475;
+    padding: toRem(5) toRem(20);
+   display: flex;
+   width: 500px;
+  }
+}

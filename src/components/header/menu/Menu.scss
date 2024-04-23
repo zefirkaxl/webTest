@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+.menu {
+  &__list {
+    display: flex;
+    @include adaptiveValue("gap ", 60, 20);
+  }
+  &__item {
+    font-family: "Rubik Distressed";
+    color: rgb(221, 221, 221);
+    @include adaptiveValue("font-size", 28, 16);
+    letter-spacing: 2px;
+    transition: color 0.5s;
+    &:hover{
+      color: black;
+    
+      text-shadow: 1px 1px 4px rgb(241, 254, 1);
+
+    }
+    &.active{
+        color: black;
+    
+      text-shadow: 1px 1px 4px rgb(241, 254, 1);
+      position: relative;
+     
+    }
+  }
+  &__progres {
+    background: url(../../img/headerBg.png);
+    padding: toRem(3) toRem(8);
+  }
+  
+}
